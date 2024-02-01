@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the login form */
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the input fields */
+        .login-form input[type=text], .login-form input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        /* Style the submit button */
+        .login-form input[type=submit] {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        /* Style the submit button on hover */
+        .login-form input[type=submit]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Page Example</h2>
+    <!-- Create a form with two input fields and a submit button -->
+    <form class="login-form" action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
